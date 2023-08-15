@@ -36,3 +36,19 @@
             font-size: 1.5rem;
             font-weight: var(--header-spec-weight);
         }
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+    .info__contact-block {
+        width: 30%;
+        background: #b4b4b43d;
+        height: 980px;
+    }
+
+    .info__useful-block {
+        width: 70%;
+        height: 100%;
+    }
