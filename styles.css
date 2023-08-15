@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+
+:root {
+    --header-font: 'Work Sans', sans-serif;
+    --header-name-weight: 400;
+    --header-spec-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #2b2b2b;
+    color: #fff;
+    font-family: var(--header-font);
+    height: 150px;
+}
+
+    .personal-info {
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .personal-info__name {
+            font-size: 4rem;
+            font-weight: var(--header-name-weight);
+        }
+
+        .personal-info__specialization {
+            font-size: 1.5rem;
+            font-weight: var(--header-spec-weight);
+        }
