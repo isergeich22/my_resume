@@ -54,7 +54,7 @@
         justify-content: flex-start;
         width: 30%;
         background: #b4b4b43d;
-        height: 980px;
+        height: 810px;
         padding: 35px;
         font-family: var(--content-font);
     }
@@ -130,3 +130,8 @@
                 .info__contact-block__phone span, .info__contact-block__address span, .info__contact-block__github span {
                     align-items: flex-start;
                 }
+
+    .description {
+        width: 70%;
+        height: 100%;
+    }
