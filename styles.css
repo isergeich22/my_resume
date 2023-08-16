@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     --header-font: 'Work Sans', sans-serif;
     --header-name-weight: 400;
     --header-spec-weight: 300;
+    --content-font: 'Roboto', sans-serif;
+    --content-header-weight: 500;
+    --content-standart-weight: 400;
+    --content-bold-weight: 700;
 }
 
 * {
@@ -37,18 +42,91 @@
             font-weight: var(--header-spec-weight);
         }
 
-.info {
+.body {
     display: flex;
     flex-direction: row;
 }
 
-    .info__contact-block {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
         width: 30%;
         background: #b4b4b43d;
         height: 980px;
+        padding: 35px;
+        font-family: var(--content-font);
     }
 
-    .info__useful-block {
-        width: 70%;
-        height: 100%;
-    }
+        .info__contact-block, .info__education-block, .info__skills-block {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin-bottom: 10%;
+        }
+
+            .info__contact-block__header, .info__education-block__header, .info__skills-block__header {
+                font-weight: var(--content-header-weight);
+                font-size: 1.8rem;
+                margin-bottom: 5%;
+            }
+
+            .info__education-block__header {
+                font-weight: var(--content-bold-weight);
+            }
+
+            .info__skills-block__header {
+                font-weight: var(--content-bold-weight);
+            }
+
+            .info__education-block p, .info__skills-block p {
+                margin-bottom: 2%;
+                color: #2b2b2bcf;
+            }
+
+            .info__contact-block__email, .info__contact-block__phone, .info__contact-block__address, .info__contact-block__github {
+                display: flex;
+                color: #2b2b2bcf;
+                margin-bottom: 2%;
+            }
+
+                .info__contact-block__email a {
+                    text-decoration: none;
+                    color: #2b2b2bcf;
+                }
+
+                .info__contact-block__email a:hover {
+                    text-decoration: underline;
+                }
+
+                .info__contact-block__email a:visited {
+                    color: #2b2b2bcf;
+                }
+
+                .info__contact-block__github a {
+                    text-decoration: none;
+                    color: #00a2ff;
+                }
+
+                .info__contact-block__github a:hover {
+                    text-decoration: underline;
+                }
+
+                .info__contact-block__github a:visited {
+                    color: #00a2ff;
+                }
+
+                .info__contact-block__email span, .info__contact-block__phone span, .info__contact-block__address span, .info__contact-block__github span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 8px;
+                    text-align: center;
+                }
+
+                .info__contact-block__phone span, .info__contact-block__address span, .info__contact-block__github span {
+                    align-items: flex-start;
+                }
