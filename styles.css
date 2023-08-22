@@ -54,7 +54,7 @@
         justify-content: flex-start;
         width: 30%;
         background: #b4b4b43d;
-        height: 810px;
+        height: 1010px;
         padding: 35px;
         font-family: var(--content-font);
     }
@@ -68,17 +68,13 @@
             margin-bottom: 10%;
         }
 
-            .info__contact-block__header, .info__education-block__header, .info__skills-block__header {
+            .info__contact-block__header, .info__education-block__header, .info__skills-block__header, .description__workexperience__header, .description__projects__header {
                 font-weight: var(--content-header-weight);
                 font-size: 1.8rem;
                 margin-bottom: 5%;
             }
 
-            .info__education-block__header {
-                font-weight: var(--content-bold-weight);
-            }
-
-            .info__skills-block__header {
+            .info__education-block__header, .info__skills-block__header, .description__workexperience__header, .description__projects__header {
                 font-weight: var(--content-bold-weight);
             }
 
@@ -134,4 +130,99 @@
     .description {
         width: 70%;
         height: 100%;
+        font-family: var(--content-font);
+        padding: 35px;
     }
+
+    .description__workexperience, .description__projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+        .description__workexperience__header, .description__projects__header {
+            margin-bottom: 1%;
+        }
+
+        .description__workexperience__specialization, .description__projects__simple__header {
+            font-size: 1.8rem;
+            margin-bottom: .7%;
+            color: #2b2b2bcf;
+        }
+
+        .description__workexperience__organization, .description__workexperience__period {
+            font-size: 1.4rem;
+            color: #2b2b2bcf;
+        }
+
+        .description__workexperience__list {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            list-style:disc;
+        }
+
+            .description__workexperience__list__list-item {
+                margin-top: 1%;
+                color:#2b2b2bcf;
+            }
+
+        .description__projects__simple {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .description__projects__simple__list {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 5%;
+        }
+
+            .description__projects__simple__list__card {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+                border: 1px solid #c2c2c250;
+                border-radius: 5px;
+            }
+
+            .description__projects__simple__list__card:hover {
+                background: #c2c2c250;
+                border: 2px solid #fff;
+
+                .card__image img {
+                    border: .5px solid #0000002d;
+                    border-radius: 5px;
+                }
+
+            }
+
+                .card__image {
+                    width: 80%;
+                }
+
+                    .card__image img {
+                        width: 100%;
+                    }
+
+                .card__reference {
+                    width: 70%;
+                    text-align: center;
+                    margin-bottom: 4%;
+                }
+
+                    .card__reference a {
+                        text-decoration: none;
+                        width: 100%;
+                        color: #2b2b2bcf;
+                    }
